@@ -1,0 +1,296 @@
+
+/*---------- Body------- */
+
+body{font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+/*------------------------------------------------- header----------------------------------------------- */
+
+.Influencer_products{
+    margin-left: 100px;
+    margin-top: 70px;
+}
+nav ul{
+    
+    display:flex;
+    margin-left: 700px;
+    margin-top: -30px;
+    
+}
+nav li{
+    
+    list-style: none;
+    margin-right: 15px;
+    font-size: 20px;
+    padding: 0px 5px;
+    }
+nav li a{
+    text-decoration: none;
+    color:rgb(44, 43, 43);
+}
+nav li:hover{
+    background-color: bisque;
+}
+
+
+
+/*------------------------------------------------ Container 01 -------------------------------------- */
+
+
+.container01{
+    margin-top: 100px;
+}
+.style-start{
+    display: flex;
+}
+.Head-container01{
+  font-size: 40px;
+}
+.button01{
+  border: none;
+  background-color:mediumseagreen;
+  padding: 15px 32px;
+  text-align: center;
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 20px ;
+  margin-left: 100px;
+  cursor: pointer;
+}
+p{
+  font-size: 20px; 
+  text-align:justify; 
+  
+}
+.Start-details{
+    margin-left: 100px;
+}
+.style-start img{
+    padding-left: 60px;
+    padding-top: 0px;
+    margin-right: 130px;
+    width: 500px;
+    height:470px;
+}
+/*-------------------------------------------------Logo------------------------------------------------ */
+
+.Logo{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 120px;
+    padding-right: 150px;
+    padding-left: 150px;
+}
+
+/*------------------------------------------------ Container 03 -----------------------------------------------*/
+
+.container02{
+    margin-top: 50px;
+}
+.style-main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 50px;
+    margin-left: 50px;
+    background-color:whitesmoke;
+}
+
+
+.style01, .style02, .style03, .style04, .style05, .style06{
+    
+    background-color:white;
+    border:2px solid white;
+    border-radius: 5px;
+    margin-right: 53px;
+    margin-left: 50px;
+    padding: 10px;
+}
+.ratings{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+span{
+    margin-right: 5px;
+}
+
+.shift{
+    color: gray;
+}
+.Head-container02{
+    padding-top: 40px;
+    text-align: center;
+    font-size: 40px;
+}
+.price{
+    font-size: 30px;
+}
+.See-more{
+    margin-top:40px;
+}
+.See-more a{
+  color: green;  
+  text-decoration:none; 
+  margin-top: 20px;  
+  font-size: 25px;
+  margin-left: 1130px;  
+  cursor: pointer;
+}
+
+
+
+
+/*-------------------------------------------------Container 03------------------------------------------------*/
+
+.container03{
+    padding-top: 50px;
+}
+.style-OnePlace{
+    display: flex;
+    margin-top: 50px;
+    
+}
+.style-OnePlace img{
+    padding-left: 60px;
+    padding-top: 50px;
+    width: 500px;
+    height:350px;
+}
+.OneP-details{
+    margin-left: 200px;
+}
+.Head-container03{
+    font-size: 45px;
+}
+.fa-star.filled{
+    color:gold;
+}
+
+.fa-star-half-alt{
+    color:gold;
+}
+
+.OneP-info{
+    margin-right: 150px;
+}
+.button02{
+  border: none;
+  font-size: 20px ;
+  background-color:mediumseagreen;
+  border-radius: 10px;
+  padding: 15px 32px;
+  margin-left: 60px;
+  margin-bottom: 600px;
+  cursor: pointer;
+}
+
+
+
+
+
+/*----------------------------------------------------- footer----------------------------------------------- */
+
+.footer-main{
+    color: seashell;
+    text-align: center;
+    
+}
+.footer{
+   margin-top: -200px;
+   position:sticky;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color:rgb(4, 4, 56);
+   color: white;
+   text-align: center;
+}
+.footer-head p{
+    color:seashell;
+    text-align: center;
+    
+}
+
+/*---------------------------------Media Queries / Mobile and Tablet view------------------------------------------*/
+
+@media only screen and (max-width:688px) {
+    .style-start{
+        display: flex;       
+        flex-direction: column;
+        grid-template-columns: repeat(1,1fr);
+      
+    }
+    .Logo{
+        width: 100px;
+        flex-direction: column;
+        grid-template-columns: repeat(1,1fr); 
+        grid-row-gap: 70px;
+    }
+    nav{
+        display: none;
+    }
+    .style-main{
+        
+        width: 100px;
+        flex-direction: column;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .style-OnePlace{
+        
+        width: 80px;
+        display:grid;
+        flex-direction: column;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .OneP-info{
+        margin-left: -50px;
+    }
+    .footer-main{
+        display:grid;
+        margin-left: 50px;    
+    }
+}
+
+@media only screen and (min-width:688px)and (max-width:992px) {
+
+    .style-start{
+        display: flex;       
+        flex-direction: column;
+        grid-template-columns: repeat(1,1fr);
+      
+    }
+    .Logo{
+        width: 100px;
+        flex-direction: column;
+        grid-template-columns: repeat(1,1fr); 
+        grid-row-gap: 70px;
+    }
+    nav{
+        display: none;
+    }
+    .style-main{
+        
+        width: 100px;
+        flex-direction: column;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .style-OnePlace{
+        
+        width: 80px;
+        display:grid;
+        flex-direction: column;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .OneP-info{
+        margin-left: -50px;
+    }
+    .footer-main{
+        display:grid;
+        margin-left: 50px;    
+    }
+}
